@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:  16px;
+    
+}
+
+
+nav ul{
+    background:#2d56d2;
+    list-style-type: none;
+    /*Establece un contenedor de ítems flexible en bloque*/
+    display:flex;
+    /*La dirección en la que se apilan las líneas de texto*/
+    flex-direction:column;
+  
+}
+nav ul li a{
+    color:#f9f9f9;
+    /*Hace que el elemento genere una caja de bloque*/
+    display:block;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background:rgba(0,0,0, .4);
+}
+
+@media only screen and (min-width:30em){
+    nav ul{
+        /*Los elementos flexibles se muestran horizontalmente, como una fila*/
+        flex-direction:row;
+        /*Los elementos se colocan con espacio entre las líneas*/
+        justify-content:space-between;
+    }
+    nav ul li{
+        flex:1 0 auto;
+        text-align: center;
+    }
+}
+
+main{
+    width:  90%;
+    max-height: 1000px ;
+    margin: 20px auto;
+    background: #fff;
+    padding: 28px;
+    /*Añadimos un sobreado al borde*/
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.75);
+}
+
+main article h1{
+    font-weight: normal;
+    
+}
+
+main article hr{
+    margin-bottom:1em;
+    height: 2px;
+    background: #2d56d2;
+    border:none;
+}
+
+main article p{
+    /*Especifica un margen inferior en em del ancho del elemento que contiene, 
+    aparte el tamaño es una vez más grande que de la fuente actual*/
+    margin-bottom: 1em;
+}
+
+.color{
+    color: blue;
+}

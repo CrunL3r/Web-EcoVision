@@ -1,0 +1,83 @@
+.contenedor {
+    /*Establece un contenedor de ítems flexible en bloque*/
+    display: flex;
+    justify-content: center;
+    /*Las líneas se empaquetan hacia el comienzo del contenedor flexible*/
+    align-content: flex-start;
+    /*Especifico la dirección y debe envolverse el elemento*/
+    -webkit-flex-flow: row wrap;
+    /*Especifico la dirección y debe envolverse el elemento*/
+    flex-flow: row wrap;
+}
+
+h2{
+    text-align: center;
+}
+
+.square {
+    border: 5px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 0.5em;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    color: white;
+    font-size: 20px;
+}
+
+.square.a0 {
+    background-image: url('../Img/akira.jpg');
+}
+
+.square.a1 {
+    background-image: url('../Img/caballeros.jpg');
+}
+
+.square.a2{
+    background-image: url('../Img/dragon.jpg');
+}
+
+.square.a3{
+    background-image: url('../Img/MazingerZ.jpg');
+}
+
+.square.a4 {
+    background-image: url('../Img/One-Piece.jpg');
+   
+}
+
+.square.a5 {
+    background-image: url('../Img/ONEPUNCHMAN.jpg');
+}
+
+.square.a6 {
+    background-image: url('../Img/psycho-pass.png');
+}
+
+.square.a7 {
+    background-image: url('../Img/Slayers.jpg');
+
+}
+
+.square.a8 {
+    background-image: url('../Img/ataque-titanes.jpg');
+
+}
+
+.square.a9 {
+    background-image: url('../Img/Zetman.jpg');
+}
+
+.square:hover {
+    border-style: dotted;
+}
+
+.aligner {
+    /*Establece un contenedor de ítems flexible en bloque*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
