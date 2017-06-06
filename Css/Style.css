@@ -46,7 +46,8 @@ nav ul li a:hover{
 
 main{
     width:  90%;
-    max-height: 1000px ;
+    /*Error solucionado tenia puesto en max-height en 1100px con auto se va recolocando con */
+    max-height: auto ;
     margin: 20px auto;
     background: #fff;
     padding: 28px;
